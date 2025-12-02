@@ -65,18 +65,18 @@ export default function ServicesGrid() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <AnimatedSection key={i}>
-              <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-card/95 backdrop-blur">
+              <Card className="h-full border border-slate-200 bg-white hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="w-8 h-8 text-primary" />
+                  <div className="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center mb-4">
+                    <service.icon className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl text-slate-900">
+                    {service.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-lg">
-                    {service.desc}
-                  </p>
-                  <ArrowRight className="w-5 h-5 text-primary mt-4 opacity-0 group-hover:opacity-100 transition" />
+                  <p className="text-slate-600 text-lg">{service.desc}</p>
+                  <ArrowRight className="w-5 h-5 text-emerald-600 mt-4 opacity-0 group-hover:opacity-100 transition" />
                 </CardContent>
               </Card>
             </AnimatedSection>

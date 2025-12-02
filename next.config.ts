@@ -2,44 +2,46 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // ← THIS IS THE ONLY THING YOU NEED TO ADD
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "www.ec-ma.com",
-        port: "",
-        pathname: "/wp-content/uploads/**",
-      },
-      {
-        protocol: "https",
-        hostname: "images.squarespace-cdn.com",
-        port: "",
-        pathname: "/**",
-      },
+      // Google thumbnails (your gas turbines, generators, compressors, etc.)
       {
         protocol: "https",
         hostname: "encrypted-tbn0.gstatic.com",
         port: "",
-        pathname: "/images?q=tbn:ANd9Gc**", // Matches the pattern
+        pathname: "/**", // ← changed from /images?q=tbn:ANd9Gc** to /** → covers everything
       },
-      {
-        protocol: "https",
-        hostname: "encrypted-tbn0.gstatic.com",
-        port: "",
-        pathname: "/images?q=tbn:ANd9Gc**", // Matches Google's thumbnail pattern
-      },
+
+      // Vecteezy (your steam turbine)
       {
         protocol: "https",
         hostname: "static.vecteezy.com",
         port: "",
         pathname: "/**",
       },
+
+      // EC-MA WordPress (your pumps image)
       {
         protocol: "https",
-        hostname: "encrypted-tbn0.gstatic.com",
+        hostname: "www.ec-ma.com",
         port: "",
-        pathname: "/images?q=tbn:ANd9Gc**",
+        pathname: "/wp-content/uploads/**",
+      },
+
+      // Squarespace CDN (your control systems image)
+      {
+        protocol: "https",
+        hostname: "images.squarespace-cdn.com",
+        port: "",
+        pathname: "/**",
+      },
+
+      // Bonus: Unsplash (in case you use it later)
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

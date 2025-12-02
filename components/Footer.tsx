@@ -7,20 +7,17 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              MICROMEGAS
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">QUANTUM</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              MICROMEGAS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ
+              QUANTUM EUROPE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ
               <br />
               Plac Bankowy 2, lok. 1309
               <br />
               00-095 Warszawa, Poland
               <br />
-              NIP: 0000959488
+              NIP: 0001200404
             </p>
           </div>
-
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-3 text-sm">
@@ -54,7 +51,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3 text-sm">
@@ -74,7 +70,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <p className="text-sm text-muted-foreground space-y-2">
@@ -84,9 +79,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t pt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} MICROMEGAS SPÓŁKA Z OGRANICZONĄ
-          ODPOWIEDZIALNOŚCIĄ. All rights reserved.
+        <div className="border-t border-slate-200 pt-8 text-center text-sm text-slate-600">
+          © {new Date().getFullYear()} QUANTUM EUROPE SPÓŁKA Z OGRANICZONĄ
+          ODPOWIEDZIALNOŚCIĄ · NIP: 0001200404 · witamy@quantum-eur.pl
         </div>
       </div>
     </footer>

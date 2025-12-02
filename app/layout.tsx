@@ -10,71 +10,25 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "MICROMEGAS Sp. z o.o. | Industrial Spare Parts & Logistics",
-    template: "%s | MICROMEGAS Sp. z o.o.",
+    default: "QUANTUM EUROPE Sp. z o.o. | Trade Without Borders",
+    template: "%s | QUANTUM EUROPE",
   },
   description:
-    "Based in Warsaw, Poland — international trade and distribution of industrial equipment and spare parts. Seamless supply from Europe to Asia.",
+    "Warsaw-based coordinator of seamless industrial trade across Europe and beyond.",
   keywords:
-    "industrial spare parts, gas turbines, steam turbines, generators, compressors, Poland, Warsaw, MICROMEGAS, turnkey procurement",
-  authors: [{ name: "MICROMEGAS Sp. z o.o." }],
-  creator: "MICROMEGAS Sp. z o.o.",
-  publisher: "MICROMEGAS Sp. z o.o.",
-
+    "industrial logistics, heavy transport, Poland trade, QUANTUM EUROPE",
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://micro-megas.com",
-    siteName: "MICROMEGAS Sp. z o.o.",
-    title: "MICROMEGAS Sp. z o.o. | Industrial Spare Parts from Poland",
-    description:
-      "Seamless international trade and logistics of industrial equipment and spare parts across Europe and Asia.",
-    images: [
-      {
-        url: "https://micro-megas.com/og-image.jpg", // Place your 1200×630 image in /public/og-image.jpg
-        width: 1200,
-        height: 630,
-        alt: "MICROMEGAS Sp. z o.o. – Industrial Spare Parts Supplier, Warsaw, Poland",
-      },
-    ],
-    emails: ["info@micro-megas.com"],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    site: "@micromegas_pl", // Change if you have a real handle
-    creator: "@micromegas_pl",
-    title: "MICROMEGAS Sp. z o.o. | Industrial Spare Parts & Logistics",
-    description:
-      "Warsaw-based supplier of OEM & aftermarket parts for turbines, generators, and heavy industry.",
-    images: ["https://micro-megas.com/twitter-image.jpg"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-
-  verification: {
-    google: "", // Add your Google Search Console code later if needed
-  },
-
-  alternates: {
-    canonical: "https://micro-megas.com",
+    title: "QUANTUM EUROPE Sp. z o.o.",
+    description: "Trade without borders from Poland.",
+    url: "https://quantum-eur.pl",
+    siteName: "QUANTUM EUROPE",
+    images: ["/og-image.jpg"],
+    emails: ["witamy@quantum-eur.pl"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0f172a", // Deep slate – matches your premium dark design
-  width: "device-width",
-  initialScale: 1,
+  themeColor: "#10b981", // Emerald green
 };
 
 export default function RootLayout({
@@ -84,7 +38,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-white text-slate-900 antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

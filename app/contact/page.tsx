@@ -6,7 +6,7 @@ export const metadata = { title: "Contact Us" };
 export default function ContactPage() {
   return (
     <>
-      <section className="relative py-32 bg-linear-to-br from-slate-900 via-blue-900 to-slate-950 text-white">
+      <section className="relative py-32 bg-linear-to-br  from-emerald-500 via-emerald-400 to-emerald-600 text-slate-900">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Let&lsquo;s Work Together
