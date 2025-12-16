@@ -18,7 +18,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-11 h-11">
             <Image
-              src="/logo.png"
+              src="logo.png"
               alt="LYNX"
               fill
               className="object-contain"

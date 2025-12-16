@@ -26,10 +26,10 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Operating from Estonia, we manage procurement and export of
-            industrial products, spare parts, and raw materials. Our company
-            bridges suppliers and buyers through efficient, transparent, and
-            secure trade operations.
+            Operating from United Arab Emirates, we manage procurement and
+            export of industrial products, spare parts, and raw materials. Our
+            company bridges suppliers and buyers through efficient, transparent,
+            and secure trade operations.
           </p>
         </div>
       </section>

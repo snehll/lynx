@@ -24,7 +24,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-2xl">
-            From Estonia we support
+            From United Arab Emirates we support
             <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 to-purple-400">
               international trade
@@ -39,7 +39,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-5xl mx-auto font-light">
-            Our location in Northern Europe allows us to connect suppliers and
+            Our location in Asaia allows us to connect suppliers and
             buyers quickly and confidently.
           </motion.p>
           <motion.div
