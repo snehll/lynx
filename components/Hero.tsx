@@ -39,7 +39,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-5xl mx-auto font-light">
-            Our location in Asaia allows us to connect suppliers and
+            Our location in the Middle East allows us to connect suppliers and
             buyers quickly and confidently.
           </motion.p>
           <motion.div
