@@ -49,23 +49,31 @@ export default function ContactForm({ companyName }: ContactFormProps) {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("Submitting form with values:", values);
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...values,
-          companyname: companyName.toLowerCase(), // must match your API keys
-        }),
-      });
+      const response = await fetch(
+        "https://email-xi-pearl.vercel.app/api/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...values,
+            companyname: companyName.toLowerCase(), // must match your API keys
+          }),
+        },
+      );
 
       const data = await response.json();
 
       if (data.success) {
-        toast.success("Message sent successfully! We'll reply within 24 hours.");
+        toast.success(
+          "Message sent successfully! We'll reply within 24 hours.",
+        );
         form.reset();
       } else {
-        toast.error(data.message || "Failed to send message. Please try again.");
+        toast.error(
+          data.message || "Failed to send message. Please try again.",
+        );
       }
     } catch (error) {
       toast.error("Something went wrong. Please email us directly.");
@@ -131,12 +139,24 @@ export default function ContactForm({ companyName }: ContactFormProps) {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="Air Transportation">Air Transportation</SelectItem>
-                  <SelectItem value="Heavy Transportation">Heavy Transportation</SelectItem>
-                  <SelectItem value="Sea & Intermodal Freight">Sea & Intermodal Freight</SelectItem>
-                  <SelectItem value="Turnkey Procurement">Turnkey Procurement</SelectItem>
-                  <SelectItem value="Customs & Documentation">Customs & Documentation</SelectItem>
-                  <SelectItem value="Project Logistics">Project Logistics</SelectItem>
+                  <SelectItem value="Air Transportation">
+                    Air Transportation
+                  </SelectItem>
+                  <SelectItem value="Heavy Transportation">
+                    Heavy Transportation
+                  </SelectItem>
+                  <SelectItem value="Sea & Intermodal Freight">
+                    Sea & Intermodal Freight
+                  </SelectItem>
+                  <SelectItem value="Turnkey Procurement">
+                    Turnkey Procurement
+                  </SelectItem>
+                  <SelectItem value="Customs & Documentation">
+                    Customs & Documentation
+                  </SelectItem>
+                  <SelectItem value="Project Logistics">
+                    Project Logistics
+                  </SelectItem>
                   <SelectItem value="Other">Other</SelectItem>
                 </SelectContent>
               </Select>
@@ -163,7 +183,11 @@ export default function ContactForm({ companyName }: ContactFormProps) {
           )}
         />
 
-        <Button type="submit" size="lg" className="w-full" disabled={form.formState.isSubmitting}>
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full"
+          disabled={form.formState.isSubmitting}>
           {form.formState.isSubmitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
