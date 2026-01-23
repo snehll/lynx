@@ -2,8 +2,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/argenta/v10",
-  assetPrefix: "/argenta/v10",
+  // basePath: "/argenta/v10",
+  // assetPrefix: "/argenta/v10",
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
