@@ -8,9 +8,9 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "LYNX | Estonia Industrial Trade", template: "%s | LYNX" },
+  title: { default: "LYNX | UAE Industrial Trade", template: "%s | LYNX" },
   description:
-    "From Estonia we support international trade with a balance of technological efficiency and reliable coordination.",
+    "From UAE we support international trade with a balance of technological efficiency and reliable coordination.",
   openGraph: {
     title: "LYNX GLOBAL FZ-LLC",
     description:
