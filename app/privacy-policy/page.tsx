@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             registered office in Ras Al Khaimah Free Zone (“Lynx Global”, “we,”
             “our,” or “us”), collects, uses, stores, and protects your personal
             information when you visit our website{" "}
-            <strong>[WEBSITE NAME]</strong> (“Website”).
+            <strong>https://lynxglobal.ae/</strong> (“Website”).
           </p>
           <p>
             By using our Website and submitting your personal information
@@ -149,7 +149,7 @@ export default function PrivacyPolicy() {
             <br />
             Email: hello@lynxglobal.ae
             <br />
-            Website: [WEBSITE NAME]
+            Website: https://lynxglobal.ae/
           </p>
         </div>
       </div>
